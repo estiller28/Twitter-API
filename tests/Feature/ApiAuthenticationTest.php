@@ -13,7 +13,7 @@ class ApiAuthenticationTest extends TestCase
      */
     public function test_example(): void
     {
-        $response = $this->get('/');
+        $response = $this->get(route('register'));
 
         $response->assertStatus(200);
     }
